@@ -2,6 +2,9 @@
 if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
+  
+  " Sets working directory to the directory of the currently open file
+  set autochdir
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
@@ -65,7 +68,7 @@ endif
 set guioptions-=T
 
 " Default gui color scheme
-color ir_black
+color twilight
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -141,9 +144,9 @@ function s:UpdateNERDTree(...)
 endfunction
 
 " Utility functions to create file commands
-function s:CommandCabbr(abbreviation, expansion)
-  execute 'cabbrev ' . a:abbreviation . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:expansion . '" : "' . a:abbreviation . '"<CR>'
-endfunction
+" function s:CommandCabbr(abbreviation, expansion)
+"   execute 'cabbrev ' . a:abbreviation . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:expansion . '" : "' . a:abbreviation . '"<CR>'
+" endfunction
 
 function s:FileCommand(name, ...)
   if exists("a:1")

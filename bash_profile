@@ -7,6 +7,13 @@ alias sb='ssh sambowler@sambowler.com'
 alias desk='cd ~/Desktop'
 alias dot='cd ~/Dropbox/Misc/dotfiles'
 alias reload='. ~/.bash_profile'
+# Git aliases
+alias gs='git status'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
 # OS X style gitk
 alias gitk='/usr/bin/wish $(which gitk)'
 # Highlighted grep results
