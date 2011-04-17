@@ -1,0 +1,17 @@
+[user]
+	name = Sam Bowler
+	email = s.bowlerr@gmail.com
+[alias]
+	co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[core]
+	editor = vim
+	quotepath = false
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
