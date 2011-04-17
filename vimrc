@@ -4,6 +4,7 @@ set ruler
 set autoindent
 syntax on
 set hlsearch
+set cursorline
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
@@ -13,6 +14,7 @@ cmap w!! w !sudo tee % >/dev/null
 set nocompatible
 
 set number
+set numberwidth=5
 
 " Set encoding
 set encoding=utf-8
