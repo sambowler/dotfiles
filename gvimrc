@@ -68,7 +68,7 @@ endif
 set guioptions-=T
 
 " Default gui color scheme
-color twilight
+color mac_classic
 
 " ConqueTerm wrapper
 function StartTerm()

@@ -4,7 +4,7 @@ set ruler
 set autoindent
 syntax on
 set hlsearch
-set cursorline
+" set cursorline
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
@@ -22,7 +22,7 @@ set encoding=utf-8
 " Whitespace stuff
 set wrap
 set tabstop=4
-set shiftwidth=2
+set shiftwidth=4
 set softtabstop=4
 set expandtab
 set list listchars=tab:\ \ ,trail:·
