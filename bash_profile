@@ -1,4 +1,4 @@
-PS1="\[\033[32m\]\h \[\033[33;1m\]\w\[\033[m\] $ "
+PS1="\\e[0;33m\]\W\e[m\] \e[0;37m\]→ \e[m\]"
 
 alias mysql='/Applications/MAMP/Library/bin/mysql'
 alias mysqldump='/Applications/MAMP/Library/bin/mysqldump'
