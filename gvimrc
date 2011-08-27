@@ -68,7 +68,7 @@ endif
 set guioptions-=T
 
 " Default gui color scheme
-color mac_classic
+colorscheme solarized
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -227,3 +227,8 @@ call s:DefineCommand("mkdir", "Mkdir")
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
+
+" Command T
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>

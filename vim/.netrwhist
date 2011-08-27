@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/sam/Dropbox/htdocs/exp/bacss'
-let g:netrw_dirhist_2='/Users/sam/Dropbox/htdocs/uni/wp/assignment_uni'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/sam/Dropbox/htdocs/dev/wired/merlin_cinemas/js'
+let g:netrw_dirhist_2='/Users/sam/Dropbox/htdocs/market/mobile_wordpress/wp-content/themes/mobile-wordpress'
+let g:netrw_dirhist_3='/Users/sam/Dropbox/htdocs/exp/spending_tracker'
+let g:netrw_dirhist_4='/Users/sam/Dropbox/htdocs/dev/wired/ellenborough_park/wp-content/themes/ellenborough_park'
+let g:netrw_dirhist_5='/Volumes/www/ellenborough'
+let g:netrw_dirhist_6='/Volumes/www/ellenborough/www/blog/wp-content/themes/ellenborough_park'

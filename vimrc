@@ -4,7 +4,8 @@ set ruler
 set autoindent
 syntax on
 set hlsearch
-set guifont=Monaco:h14
+set guifont=Monaco:h13
+
 " set cursorline
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
@@ -134,8 +135,10 @@ let g:gist_open_browser_after_post = 1
 set modeline
 set modelines=10
 
-" Default color scheme
+" Background
 set background=dark
+
+" Color scheme
 color solarized
 
 " Directories for swp files
