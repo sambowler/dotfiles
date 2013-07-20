@@ -6,11 +6,6 @@ if has("gui_macvim")
   " Sets working directory to the directory of the currently open file
   set autochdir
 
-  " Command-T for CommandT
-  macmenu &File.New\ Tab key=<D-T>
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
-
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
@@ -62,13 +57,20 @@ if has("gui_macvim")
   " Adjust viewports to the same size
   map <Leader>= <C-w>=
   imap <Leader>= <Esc> <C-w>=
+
+  " Set F4 to toggle search highlighting
+  " noremap <F4> :set hlsearch! hlsearch?<CR>
 endif
 
 " Start without the toolbar
 set guioptions-=T
 
+" Remove scrollbars
+set guioptions-=R
+set guioptions-=L
+
 " Default gui color scheme
-colorscheme solarized
+colorscheme smyck
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -136,10 +138,6 @@ function s:UpdateNERDTree(...)
         wincmd p
       end
     endif
-  endif
-
-  if exists(":CommandTFlush") == 2
-    CommandTFlush
   endif
 endfunction
 
@@ -227,8 +225,3 @@ call s:DefineCommand("mkdir", "Mkdir")
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
-
-" Command T
-noremap <leader>o <Esc>:CommandT<CR>
-noremap <leader>O <Esc>:CommandTFlush<CR>
-noremap <leader>m <Esc>:CommandTBuffer<CR>

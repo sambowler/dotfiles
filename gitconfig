@@ -1,6 +1,6 @@
 [user]
 	name = Sam Bowler
-	email = s.bowlerr@gmail.com
+	email = sam.bowler@ridgeway.net
 [alias]
 	co = checkout
   ci = commit
@@ -10,8 +10,17 @@
 [core]
 	editor = vim
 	quotepath = false
+	excludesfile = /Users/sam/.gitignore_global
 [color]
 	branch = auto
 	diff = auto
 	interactive = auto
 	status = auto
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[branch]
+	autosetuprebase = always

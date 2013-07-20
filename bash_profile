@@ -9,13 +9,17 @@ alias reload='. ~/.bash_profile'
 alias ls='ls -FG'
 alias hg='history | grep $1'
 alias bp='vim ~/.bash_profile'
-alias startvm='VBoxManage startvm "Ubuntu Server" --type headless'
 alias ip='ifconfig | grep inet'
+alias hosts='sudo vim /etc/hosts'
+alias server='python ~/Dropbox/Misc/server.py'
 
 # Functions
-function s { cd ~/Sites/$1; }
+function s { cd ~/Dropbox/htdocs/$1; }
+function ff { grep -RnisI $1 *; }
 function hs { history | grep $1; }
 function grm { for i in `git status | grep deleted | awk '{print $3}'`; do git rm $i; done }
+# Pulls all git repo's within the current folder
+function gpa { find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;; }
 cp_p() {
    strace -q -ewrite cp -- "${1}" "${2}" 2>&1 \
       | awk '{
@@ -41,16 +45,10 @@ alias gb='git branch'
 alias gc='git commit'
 alias gd='git diff'
 alias go='git checkout '
+alias ghist='git log --oneline --graph --decorate'
 # OS X style gitk
 alias gitk='/usr/bin/wish $(which gitk)'
 # Highlighted grep results
 alias grep='grep --color=auto'
 
-# MacPorts Installer addition on 2010-06-21_at_15:25:21: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/Developer/temp/local/node/bin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-export NODE_PATH=/Developer/temp/local/node:/Developer/temp/local/node/lib/node_modules
-# Gem Home
-
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
