@@ -4,7 +4,7 @@ set ruler
 set autoindent
 syntax on
 set nohlsearch
-set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 set autoread
 
 " Remap leader
@@ -208,7 +208,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 let g:statusline_syntastic = 1
 let g:syntastic_quiet_warnings = 1
 let g:syntastic_enable_signs = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_loc_list_height = 7
 let g:syntastic_check_on_open = 1
 
