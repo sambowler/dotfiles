@@ -158,7 +158,6 @@ endfunction
 
 function s:DefineCommand(name, destination)
   call s:FileCommand(a:destination)
-  call s:CommandCabbr(a:name, a:destination)
 endfunction
 
 " Public NERDTree-aware versions of builtin functions
