@@ -11,6 +11,7 @@ alias bp='vim ~/.bash_profile'
 alias ip='ifconfig | grep inet'
 alias hosts='sudo vim /etc/hosts'
 alias server='python ~/Dropbox/Misc/server.py'
+alias bd='. bd -s'
 
 # Functions
 function mkcd { mkdir $1 && cd $_; }
