@@ -44,14 +44,6 @@ cp_p() {
 # Delete all .svn folders within current folder
 function dsvn { find . -type d -name '.svn' -print -exec rm -rf {} \;; }
 
-# Git aliases
-alias gs='git status'
-alias ga='git add'
-alias gb='git branch'
-alias gc='git commit'
-alias gd='git diff'
-alias go='git checkout '
-alias ghist='git log --oneline --graph --decorate'
 # Highlighted grep results
 alias grep='grep --color=auto'
 
