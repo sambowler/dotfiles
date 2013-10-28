@@ -1,5 +1,6 @@
 vim/backup/
 vim/undo/
 .netrwhist
+vim/sessions
 vim/bundle/**
 ~vim/bundle/vundle

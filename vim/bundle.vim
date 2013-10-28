@@ -7,9 +7,6 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-" Git
-Bundle 'tpope/vim-fugitive'
-
 " JavaScript
 Bundle "itspriddle/vim-jquery.git"
 Bundle "pangloss/vim-javascript"
@@ -33,5 +30,6 @@ Bundle "xolox/vim-session"
 Bundle "MarcWeber/vim-addon-mw-utils.git"
 Bundle "garbas/vim-snipmate.git"
 Bundle "bling/vim-airline.git"
+Bundle "vim-scripts/YankRing.vim"
 
 filetype plugin indent on     " required!
