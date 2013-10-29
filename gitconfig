@@ -1,8 +1,8 @@
 [user]
-	name = Sam Bowler
-	email = sam.bowler@ridgeway.net
+    name = Sam Bowler
+    email = sam.bowler@ridgeway.net
 [core]
-	excludesfile = /Users/samb/.gitignore_global
+    excludesfile = /Users/samb/.gitignore_global
     autocrlf = false
     whitespace = cr-at-eol
 [push]
@@ -10,9 +10,9 @@
 [branch]
     autosetuprebase = always
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [alias]
     h = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
     c = commit -m
