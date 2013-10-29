@@ -1,6 +1,8 @@
 vim/backup/
 vim/undo/
 .netrwhist
+.bzrignore
+.VimballRecord
 vim/sessions
 vim/bundle/**
 ~vim/bundle/vundle
