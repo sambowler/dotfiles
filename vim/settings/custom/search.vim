@@ -1,3 +1,8 @@
+set nohlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 " Use sane regexes
 nnoremap / /\v
 vnoremap / /\v

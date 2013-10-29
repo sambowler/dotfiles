@@ -1,8 +1,3 @@
-if !has("gui_macvim")
-  set t_Co=256
-  let g:solarized_termcolors=256
-endif
-
 hi! link txtBold Identifier
 hi! link zshVariableDef Identifier
 hi! link zshFunction Function
@@ -61,7 +56,13 @@ hi! link htmlLink Include
 hi! CursorLine cterm=NONE gui=NONE
 hi! Visual ctermbg=233
 hi! Type gui=bold
-hi! EasyMotionTarget guifg=#4CE660 gui=bold
+hi! EasyMotionTarget guifg=#DC322F gui=bold
 
 " Make sure this file loads itself on top of any other color settings
 au VimEnter * so ~/.vim/settings/plugins/solarized.vim
+
+" Color scheme
+colorscheme solarized
+
+" Background
+set background=dark
