@@ -1,0 +1,1 @@
+nnoremap ,y :Yanks<CR>

@@ -11,3 +11,5 @@ let g:statusline_syntastic = 1
 let g:syntastic_enable_signs = 1
 let g:syntastic_loc_list_height = 7
 let g:syntastic_check_on_open = 1
+
+let g:syntastic_ignore_files = ['.ascx', '.master', '.ascx.cs']

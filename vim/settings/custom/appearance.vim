@@ -12,3 +12,7 @@ if has("gui_macvim")
   " (the numbers don't show up) so I made it a VimEnter event
   autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 endif
+
+color solarized
+
+set background=dark

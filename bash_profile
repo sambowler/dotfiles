@@ -50,3 +50,5 @@ alias grep='grep --color=auto'
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 PATH=~/Dropbox/Misc:$PATH
+export PATH=/usr/local/bin:$PATH
+# export PATH=/usr/local/bin:/Users/samb/Dropbox/Misc:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
