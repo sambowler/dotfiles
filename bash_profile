@@ -1,5 +1,10 @@
 PS1="[\h] \[\e[0;33m\]\W \[\e[1;37m\]→ \[\e[m\]"
 
+# Vim mode
+set -o vi
+
+# http://stackoverflow.com/a/10264470/294188
+alias tmux="TERM=screen-256color-bce tmux"
 alias sb='ssh sambowler@sambowler.com'
 alias desk='cd ~/Desktop'
 alias dot='cd ~/Dropbox/Misc/dotfiles'

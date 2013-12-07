@@ -12,7 +12,3 @@ call EasyMotion#InitOptions({
 \ , 'hl_group_target' : 'Question'
 \ , 'hl_group_shade'  : 'EasyMotionShade'
 \ })
-
-" Make EasyMotion more yellow, less red
-hi clear EasyMotionTarget
-hi! EasyMotionTarget guifg=yellow

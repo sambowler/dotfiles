@@ -60,6 +60,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
+au BufWritePost bundle.vim so ~/.vim/bundle.vim
 
 " Reselect visual block after indent/outdent
 vnoremap < <gv
@@ -68,9 +69,10 @@ vnoremap > >gv
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
 
-" HTML filetype on .master and .ascx pages
+" HTML filetype on various file types
 au BufRead,BufNewFile *.master set filetype=html
 au BufRead,BufNewFile *.ascx set filetype=html
+au BufRead,BufNewFile *.ejs set filetype=html
 
 " Remove all trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>

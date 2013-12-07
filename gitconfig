@@ -20,3 +20,4 @@
     ca = commit -a -m
     s = status
     a = add
+    d = difftool

@@ -9,10 +9,7 @@ let g:ctrlp_split_window = 1 " <CR> = New Tab
 " controller
 let g:ctrlp_by_filename = 1
 
-" We don't want to use Ctrl-p as the mapping because
-" it interferes with YankRing (paste, then hit ctrl-p)
-let g:ctrlp_map = ',t'
-nnoremap <silent> ,t :CtrlP<CR>
+nnoremap <silent> <leader>t :CtrlPTag<CR>
 
 " Additional mapping for buffer search
-nnoremap <silent> ,b :CtrlPBuffer<cr>
+nnoremap <silent> <leader>b :CtrlPBuffer<cr>

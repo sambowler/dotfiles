@@ -1,0 +1,12 @@
+snippet cl
+	console.log( ${1} );${2}
+snippet module
+	define( function() {
+		function ${1:name}() {
+		}
+
+		$1.prototype = {
+		};
+
+		return $1;
+	});

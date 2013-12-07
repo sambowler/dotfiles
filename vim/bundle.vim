@@ -11,11 +11,13 @@ Bundle 'gmarik/vundle'
 Bundle "othree/html5.vim"
 
 " CSS
-Bundle 'cakebaker/scss-syntax.vim'
+Bundle "cakebaker/scss-syntax.vim"
+Bundle "hail2u/vim-css3-syntax"
 
 " JavaScript
 Bundle "itspriddle/vim-jquery.git"
 Bundle "pangloss/vim-javascript"
+Bundle "elzr/vim-json"
 
 " Motion
 Bundle "Lokaltog/vim-easymotion"
@@ -34,9 +36,16 @@ Bundle "majutsushi/tagbar"
 " Git
 Bundle "tpope/vim-fugitive"
 
-" Other
-Bundle "vim-scripts/matchit.zip.git"
+" Text
+Bundle "tsaleh/vim-matchit"
+Bundle "nathanaelkane/vim-indent-guides"
 Bundle "AndrewRadev/splitjoin.vim"
+
+" Themes
+Bundle "zenorocha/dracula-theme"
+Bundle "altercation/vim-colors-solarized"
+
+" Other
 Bundle "majutsushi/tagbar.git"
 Bundle "scrooloose/syntastic.git"
 Bundle "xsunsmile/showmarks.git"
@@ -50,9 +59,9 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate.git"
 Bundle "bling/vim-airline.git"
 Bundle "maxbrunsfeld/vim-yankstack"
-Bundle "altercation/vim-colors-solarized"
 Bundle "editorconfig/editorconfig-vim"
-Bundle "Shougo/vimproc.vim"
-Bundle "Shougo/vimshell.vim"
+Bundle "sjl/gundo.vim"
+Bundle "mhinz/vim-startify"
+Bundle "ervandew/supertab"
 
 filetype plugin indent on     " required!

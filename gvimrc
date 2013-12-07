@@ -1,6 +1,9 @@
 if has("gui_macvim")
   set macmeta
 
+  " Fix a bug where MacVim wouldn't let you type # as a result of the previous line
+  imap <silent> <M-3> #
+
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
