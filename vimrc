@@ -95,3 +95,6 @@ endif
 for fpath in split(globpath('~/.vim/settings', '**/*.vim'), '\n')
     exe 'source' fpath
 endfor
+
+" Don't conceal quotes
+set conceallevel=0
