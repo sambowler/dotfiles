@@ -60,7 +60,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 
 " automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
-au BufWritePost bundle.vim so ~/.vim/bundle.vim
+au BufWritePost vundle.vim so ~/.vim/vundle.vim
 
 " Reselect visual block after indent/outdent
 vnoremap < <gv
@@ -87,8 +87,8 @@ set shiftround
 map <Leader>ve :tabe ~/.vimrc<cr>
 
 " Load bundles
-if filereadable(expand("~/.vim/bundle.vim"))
-  source ~/.vim/bundle.vim
+if filereadable(expand("~/.vim/vundle.vim"))
+  source ~/.vim/vundle.vim
 endif
 
 " Load settings files
@@ -96,5 +96,11 @@ for fpath in split(globpath('~/.vim/settings', '**/*.vim'), '\n')
     exe 'source' fpath
 endfor
 
+color hybrid
+
 " Don't conceal quotes
 set conceallevel=0
+
+" Use jk/kj as esc
+inoremap jk <esc>
+inoremap kj <esc>

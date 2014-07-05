@@ -13,6 +13,11 @@ if has("gui_macvim")
   autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 endif
 
-color solarized
+colorscheme hybrid
+color hybrid
 
 set background=dark
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1

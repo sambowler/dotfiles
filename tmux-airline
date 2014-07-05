@@ -1,0 +1,20 @@
+#!/bin/sh
+
+LSEP=
+LSEPE=
+RSEP=
+RSEPE=
+
+WIDTH=${1}
+
+SMALL=80
+MEDIUM=140
+
+if [ "$WIDTH" -ge "$SMALL" ]; then
+  HOSTNAME="$(uname -n)"
+  USERNAME="$(whoami)"
+fi
+DATE="$(date +'%d/%m/%y')"
+TIME="$(date +'%H:%M')"
+
+echo "$TIME | $DATE | $USERNAME@$HOSTNAME " | sed 's/ *$/ /g'

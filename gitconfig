@@ -1,9 +1,9 @@
 [user]
-    name = Sam Bowler
-    email = sam.bowler@ridgeway.net
+	name = Sam Bowler
+	email = sam.bowler@ridgeway.net
 [core]
     editor = vim
-    excludesfile = /Users/samb/.gitignore_global
+	excludesfile = /Users/samb/.gitignore_global
     autocrlf = false
     whitespace = cr-at-eol
 [push]
@@ -21,3 +21,9 @@
     s = status
     a = add
     d = difftool
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
