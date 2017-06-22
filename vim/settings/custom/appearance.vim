@@ -1,4 +1,4 @@
-set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 
 " Line height
 set linespace=1
@@ -19,5 +19,4 @@ color hybrid
 set background=dark
 
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+set colorcolumn=80

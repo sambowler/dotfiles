@@ -6,3 +6,4 @@ au BufRead,BufNewFile *.master set filetype=html
 au BufRead,BufNewFile *.ascx set filetype=html
 au BufRead,BufNewFile *.aspx set filetype=html
 au BufRead,BufNewFile *.ejs set filetype=html
+au BufRead,BufNewFile *.hbs set filetype=html

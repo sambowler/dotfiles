@@ -73,6 +73,7 @@ au VimResized * exe "normal! \<c-w>="
 au BufRead,BufNewFile *.master set filetype=html
 au BufRead,BufNewFile *.ascx set filetype=html
 au BufRead,BufNewFile *.ejs set filetype=html
+au! BufRead,BufNewFile *.js set filetype=javascript " Shouldn't really be necessary but VIM doesn't seem to be picking it up?!
 
 " Remove all trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
@@ -87,8 +88,8 @@ set shiftround
 map <Leader>ve :tabe ~/.vimrc<cr>
 
 " Load bundles
-if filereadable(expand("~/.vim/vundle.vim"))
-  source ~/.vim/vundle.vim
+if filereadable(expand("~/.vim/plugins.vim"))
+  source ~/.vim/plugins.vim
 endif
 
 " Load settings files
@@ -96,11 +97,8 @@ for fpath in split(globpath('~/.vim/settings', '**/*.vim'), '\n')
     exe 'source' fpath
 endfor
 
-color hybrid
-
-" Don't conceal quotes
-set conceallevel=0
-
 " Use jk/kj as esc
 inoremap jk <esc>
 inoremap kj <esc>
+
+set relativenumber

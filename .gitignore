@@ -7,3 +7,4 @@ vim/sessions
 vim/bundle/**
 ~vim/bundle/vundle
 ctags
+vim/plugged/**
